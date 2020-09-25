@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Menu tests Should render menu 1`] = `
+<nav
+  class="sc-AxjAm bngylr"
+  data-testid="menu"
+>
+  <ul
+    class="sc-AxirZ bWyXia"
+  >
+    <li>
+      <a
+        href="/"
+      >
+        Item 1
+      </a>
+    </li>
+    <li>
+      <a
+        href="/"
+      >
+        Item 2
+      </a>
+    </li>
+    <li>
+      <a
+        href="/"
+      >
+        Item 3
+      </a>
+    </li>
+    <li>
+      <a
+        href="/"
+      >
+        Item 4
+      </a>
+    </li>
+  </ul>
+</nav>
+`;
