@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useSelector, connect } from "react-redux";
 import { Link } from "react-router-dom";
 import axios from "axios";
+import {API_URL} from '../../config'
 
 import {
   StyledHeader,
@@ -28,7 +29,7 @@ const Header = () => {
   async function searchProduct(product = "") {
     if (product.trim() !== "") {
       const request = await axios.get(
-        "http://localhost:9001/products/name/" + product
+        API_URL + "/products/name/" + product
       );
       setSuggestions(request.data);
     }
