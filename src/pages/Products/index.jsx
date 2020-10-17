@@ -8,13 +8,15 @@ import Header from "../../layout/Header";
 import Footer from "../../layout/Footer";
 import ProductCard from "../../components/ProductCard";
 
+import {API_URL} from '../../config'
+
 const Products = () => {
   const [products, setProducts] = useState([]);
   const { category } = useParams();
 
   async function getProducts(category) {
     const request = await axios.get(
-      "http://localhost:9001/products/category/" + category
+      API_URL + "/products/category/" + category
     );
     setProducts(request.data);
   }

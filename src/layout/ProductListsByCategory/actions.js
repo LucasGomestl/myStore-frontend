@@ -2,10 +2,12 @@ import * as types from "./actionTypes";
 
 import axios from "axios";
 
+import {API_URL} from '../../config'
+
 export async function getProductListsByCategory(categories) {
   const request = categories.map(async (category) => {
     return await axios
-      .get("http://localhost:9001/products/category/" + category + "")
+      .get(API_URL + "/products/category/" + category + "")
       .then((res, err) => res.data);
   });
 

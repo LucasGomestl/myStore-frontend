@@ -4,6 +4,7 @@ import axios from "axios";
 import { useParams } from "react-router-dom";
 
 import { Main, Title, ProductsContainer } from "./style";
+import {API_URL} from '../../config'
 
 import Header from "../../layout/Header";
 import Footer from "../../layout/Footer";
@@ -16,9 +17,9 @@ const Offers = () => {
   async function getProducts(category) {
     let request;
     if (category) {
-      request = await axios.get("http://localhost:9001/offers/" + category);
+      request = await axios.get(API_URL + "/offers/" + category);
     } else {
-      request = await axios.get("http://localhost:9001/offers/");
+      request = await axios.get(API_URL + "/offers/");
     }
     setProducts(request.data);
   }

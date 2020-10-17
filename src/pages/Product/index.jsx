@@ -27,6 +27,8 @@ import {
   Button,
 } from "./styles";
 
+import {API_URL} from '../../config'
+
 const Product = () => {
   const [product, setProduct] = useState({});
   const [isLoading, setIsLoading] = useState(true);
@@ -38,7 +40,7 @@ const Product = () => {
   const { id } = useParams();
 
   async function getProduct(id) {
-    const request = await axios.get("http://localhost:9001/products/" + id);
+    const request = await axios.get(API_URL + "/products/" + id);
     setProduct(request.data);
   }
 
