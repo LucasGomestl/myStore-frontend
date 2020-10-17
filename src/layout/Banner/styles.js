@@ -10,6 +10,6 @@ export const StyledBanner = styled.img`
   height: 100%;
   margin-top: 143px;
   @media (max-width: ${mobile}) {
-    margin-top: 112px;
+    margin-top: 104px;
   }
 `;

@@ -112,9 +112,11 @@ export const StyledHeader = styled.header`
   }
 
   @media (max-width: ${mobile}) {
+    padding: 15px 0 0 0 !important;
     ${MenuContainer} {
       display: none;
     }
+    
     #menu-icon {
       display: block;
     }
@@ -130,7 +132,7 @@ export const StyledHeader = styled.header`
     }
 
     ${IconsContainer} {
-      width: 23px;
+      width: 20px;
       svg {
         margin: 0px;
       }
@@ -149,6 +151,11 @@ export const StyledHeader = styled.header`
         padding-left: 10px;
         height: 50px;
       }
+    }
+    ${CartItemsQuantity}{
+      width: 15px;
+      height: 15px;
+      font-size: 11px;
     }
   }
 `;
