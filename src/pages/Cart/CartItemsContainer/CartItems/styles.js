@@ -61,6 +61,10 @@ export const ProductTitle = styled.h2`
   font-size: 13px;
   margin-bottom: 20px;
   text-transform: capitalize;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
 `;
 
 export const ProductDescription = styled.span`
