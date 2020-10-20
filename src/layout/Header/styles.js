@@ -35,7 +35,7 @@ export const InputContainer = styled.div`
   grid-template-columns: minmax(300px, 923px) max-content;
   align-items: center;
   justify-content: center;
-  margin-bottom: 3px;
+  margin-bottom: 0px;
 
   svg {
     margin-left: -51px;

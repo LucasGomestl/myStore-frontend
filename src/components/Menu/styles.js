@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export const StyledMenu = styled.nav`
   display: flex;
   height: 54px;
-  background-color: #fafafa;
+  background-color: #f3f3f3;
   padding: 0 15vw;
 `;
 

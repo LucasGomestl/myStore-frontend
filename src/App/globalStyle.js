@@ -17,8 +17,9 @@ const GlobalStyle = createGlobalStyle`
     list-style: none;
   }
 
-  body{
+  body, html{
   overflow-x: hidden;
+  height: 100%;
   }
 
   .App {
@@ -26,6 +27,7 @@ const GlobalStyle = createGlobalStyle`
     border-top: 1px solid var(--primary-color);
     border-bottom: 1px solid var(--primary-color);
     min-height: 100vh;
+    padding-bottom: 30px;
   }
 
   

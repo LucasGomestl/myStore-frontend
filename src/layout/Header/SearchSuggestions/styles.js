@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import { mobile } from "../../../App/globalStyle";
+import { mobile, tablet } from "../../../App/globalStyle";
 
 export const StyledSearchSuggestions = styled.div`
   position: absolute;
@@ -13,6 +13,9 @@ export const StyledSearchSuggestions = styled.div`
   justify-content: center;
   align-content: start;
   width: 100%;
+  @media(max-width: ${tablet}){
+    font-size: 13px
+  }
   @media (max-width: ${mobile}) {
     top: 87px;
     grid-column: 1/-1;
@@ -33,6 +36,10 @@ export const Suggestions = styled.ul`
 
 export const SuggestionLink = styled(Link)`
   width: 100%;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
 `;
 
 export const SuggestionItem = styled.ul`
