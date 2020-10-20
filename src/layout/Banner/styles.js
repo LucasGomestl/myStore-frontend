@@ -9,7 +9,8 @@ export const StyledBanner = styled.img`
   width: 100%;
   height: 100%;
   margin-top: 143px;
+  background-attachment: fixed;
   @media (max-width: ${mobile}) {
-    margin-top: 104px;
+    margin-top: 102px;
   }
 `;
