@@ -9,6 +9,7 @@ React and Styled Components.**
 Build using:
 
 - React
+- Redux
 - Axios
 - Styled Components
 - CSS Grid
@@ -21,7 +22,33 @@ If you want to run it locally, follow the forward steps
 
 ## Quick Start
 
-### `Backend`
+
+Clone the repo using Git:
+
+```bash
+git clone https://github.com/LucasGomestl/myStore-frontend.git
+```
+
+Install the dependencies:
+
+```bash
+npm install
+```
+
+Go to the file .env and change the content of the variable REACT_APP_LOCAL_API_URL to:
+
+```bash
+REACT_APP_LOCAL_API_URL = "https://lcsstore-api.herokuapp.com"
+```
+
+and start the app:
+
+```bash
+npm start
+```
+
+## Or
+If you want to run the backend locally.
 
 Clone the backend repo using Git:
 
@@ -39,25 +66,6 @@ and start the server:
 
 ```bash
 nodemon start
-```
-### `Frontend`
-
-Clone the repo using Git:
-
-```bash
-git clone https://github.com/LucasGomestl/myStore-frontend.git
-```
-
-Install the dependencies:
-
-```bash
-npm install
-```
-
-and start the app:
-
-```bash
-npm start
 ```
 
 That’s it! 🎉
