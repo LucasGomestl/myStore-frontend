@@ -1,7 +1,7 @@
 <h1 align=center>MyStore</h1>
 
 
-![Design preview for myStore](./public/myStore-gif-2.gif)
+![Design preview for myStore](./public/myStore-demo.gif)
 
 **👋 Hello, this is a fun web store, built for the purpose of learning 
 React and Styled Components.**
